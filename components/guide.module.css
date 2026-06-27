@@ -1,7 +1,7 @@
 .imageFrame {
   position: relative;
   overflow: hidden;
-  cursor: url('/plane-cursor.svg') 16 16, pointer;
+
 }
 
 .image {

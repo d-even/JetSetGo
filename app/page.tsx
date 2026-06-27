@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import MapSection from "../components/MapSection";
 import Introduction from "../components/Introduction";
 import Guide from "@/components/Guide";
+import Guide2 from "@/components/Guide2";
 import Pricing from "@/components/Pricing";
 import JetSetGo from "@/components/JetSetGo"
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Introduction />
       <MapSection />
       <Guide />
+      <Guide2 />
       <Pricing />
       <Contact />
       <Footer />
