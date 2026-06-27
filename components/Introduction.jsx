@@ -16,7 +16,7 @@ export default function Introduction() {
         alt=""
         fill
         priority
-        className="object-cover hidden min-[550px]:block"
+        className="object-fill hidden min-[550px]:block"
       />
       <Image
         src="/mobile.png"
@@ -57,9 +57,6 @@ export default function Introduction() {
             </p>
           </div>
         </div>
-
-        {/* ── Right: empty column (bg covers full section) ── */}
-        <div className="hidden lg:block" />
 
       </div>
     </section>

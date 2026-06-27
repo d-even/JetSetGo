@@ -9,10 +9,6 @@ const leagueSpartan = League_Spartan({
   display: "swap",
 });
 
-
-
-
-
 function HoverImage({ src, alt, className = "" }) {
   return (
     <div className={`${styles.imageFrame} ${className}`}>
@@ -82,16 +78,6 @@ export default function Guide() {
                     {/* Yellow location pin replacing the 'o' */}
                     
                   </div>
-              {/* <div className="relative aspect-[3.4/1] w-full max-w-[340px]">
-                <Image
-                  src="/JetSetGo.png"
-                  alt="JetSet G logo"
-                  fill
-                  priority
-                  sizes="(max-width: 640px) 90vw, 340px"
-                  className="object-contain"
-                />
-              </div> */}
               <p className="text-[13px] font-semibold tracking-[0.14em] text-[#0f3f87]">
                 Because the World is Calling
               </p>
@@ -163,7 +149,6 @@ export default function Guide() {
               </div>
             </article>
           </div>
-
         </div>
       </div>
     </section>

@@ -11,8 +11,6 @@ const leagueSpartan = League_Spartan({
 export default function JetSetGo() {
   return (
     <div>
-           
-      
             {/* ── Hero ── */}
             <section
               id="intro"
@@ -53,21 +51,17 @@ export default function JetSetGo() {
               />
       
               {/* ── Logo ── */}
-              <div className="relative z-10 flex flex-col items-center gap-3 sm:gap-4">
+              <div className="relative z-10 flex flex-col items-center gap-3 sm:gap-4 max-[550px]:-translate-y-10">
       
                 {/* Plane + "JetSet G" + location-pin 'o' */}
                 <div className="flex items-end gap-2 sm:gap-3">
-      
-               
-      
+    
                   {/* Text row: JetSet G + pin */}
                   <div
                     className={`${leagueSpartan.className} flex items-end leading-none text-[#0d2f64]`}
                     style={{ fontSize: "clamp(2.6rem, 9vw, 5.2rem)" }}
                   >
                     <span>JetSet Go</span>
-      
-                    {/* Yellow location pin replacing the 'o' */}
                     
                   </div>
                 </div>

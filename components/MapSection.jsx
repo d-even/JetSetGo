@@ -14,10 +14,6 @@ export default function MapSection() {
   useEffect(() => {
     const mobile = window.innerWidth < 550;
 
-    /* ─────────────────────────────────────────
-       MOBILE  (<550 px)
-       Simple IntersectionObserver: map → collage → text
-    ───────────────────────────────────────── */
     if (mobile) {
       const el = outerRef.current;
       if (!el) return;
@@ -47,11 +43,6 @@ export default function MapSection() {
       obs.observe(el);
       return () => obs.disconnect();
     }
-
-    /* ─────────────────────────────────────────
-       DESKTOP  (≥550 px)
-       Scroll-linked: progress p drives opacity / transform
-    ───────────────────────────────────────── */
     const tick = () => {
       const outer = outerRef.current;
       if (!outer) return;
@@ -83,10 +74,7 @@ export default function MapSection() {
   }, []);
 
   return (
-    /*
-      Mobile  (<550px): normal flow section — fixed min-height so absolute children are visible.
-      Desktop (≥550px): 220vh outer + sticky inner panel pinned for 120vh scroll travel.
-    */
+
     <div
       ref={outerRef}
       className="bg-[#d0ecf6] min-[550px]:min-h-[220vh]"
@@ -125,7 +113,7 @@ export default function MapSection() {
         {/* ── Travel collage — perfectly centered, bigger ── */}
         <div
           ref={collageRef}
-          className="pointer-events-none absolute inset-0 flex items-center justify-center"
+          className="pointer-events-none absolute inset-0 flex items-center justify-center pt-16"
           style={{ opacity: 0, transform: "translateY(64px)" }}
         >
           <Image
@@ -133,7 +121,7 @@ export default function MapSection() {
             alt="Travel landmarks collage"
             width={1200}
             height={600}
-            className="relative z-20 w-[95%] min-[400px]:w-[92%] min-[550px]:w-[88%] md:w-[80%] lg:max-w-4xl"
+            className="relative z-20 w-[68%] min-[400px]:w-[64%] min-[550px]:w-[60%] md:w-[54%] lg:max-w-2xl"
           />
         </div>
 
